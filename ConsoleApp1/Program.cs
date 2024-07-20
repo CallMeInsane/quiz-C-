@@ -12,10 +12,6 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        //Sounds
-        SoundPlayer correct = new SoundPlayer("correct.wav");
-        SoundPlayer wrong = new SoundPlayer("wrong.wav");
-
         //Math
         Random rnd = new Random();
         int num1 = rnd.Next(0, 100);
@@ -37,12 +33,10 @@ public class Program
             if (answer == num1+num2)
             {
                 Console.WriteLine("Correct! " + answer);
-                correct.Play();
             }
             else
             {
                 Console.WriteLine("No.");
-                wrong.Play();
             }
 
             break;
@@ -53,12 +47,10 @@ public class Program
             if (answer2 == num1-num2)
             {
                 Console.WriteLine("Correct! " + answer2);
-                correct.Play();
             }
             else
             {
                 Console.WriteLine("No.");
-                wrong.Play();
             }
             break;
 
@@ -68,12 +60,10 @@ public class Program
             if (answer3 == num1*num2)
             {
                 Console.WriteLine("Correct! " + answer3);
-                correct.Play();
             }
             else
             {
                 Console.WriteLine("No.");
-                wrong.Play();
             }
             break;
 
@@ -83,12 +73,10 @@ public class Program
             if (answer4 == num1*num2)
             {
                 Console.WriteLine("Correct! " + answer4);
-                correct.Play();
             }
             else
             {
                 Console.WriteLine("No.");
-                wrong.Play();
             }
             break;
 
